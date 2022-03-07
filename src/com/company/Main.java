@@ -7,6 +7,7 @@ public class Main {
         System.out.println(Fak(3));
         System.out.println(Fak(5));
         System.out.println(Fib(12));
+        System.out.println(recPow(10,1));
 
     }
 
@@ -14,8 +15,6 @@ public class Main {
 
         if (n == 0) {
             return 1;
-
-
         }
 
         int TimesValue = x;
@@ -56,6 +55,12 @@ public class Main {
         return returnVal;
 
 
+    }
+    public static int recPow(int x, int n){
+        if( n == 0 )
+            return 1;
+        else
+            return x*recPow(x,n-1);
     }
 
 
